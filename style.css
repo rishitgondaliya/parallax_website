@@ -16,6 +16,8 @@ section {
     font-family: "Seymour One", sans-serif;
     text-align: center;
     overflow: auto;
+    margin: 4px;
+    border-radius: 6px;
 }
 
 .parallax {
@@ -85,7 +87,7 @@ section {
 }
 
 #about pre {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 

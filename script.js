@@ -20,7 +20,7 @@ document.querySelectorAll('.navbar-nav a').forEach(anchor => {
 
 // Initialize AOS with settings for animation to appear both on scroll up and down
 AOS.init({
-    duration: 2000, // Animation duration in milliseconds
+    duration: 1600, // Animation duration in milliseconds
     offset: 200,    // Offset (in pixels) from the original trigger point
     once: false     // Animation should appear both on scroll up and down
 });
