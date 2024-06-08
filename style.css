@@ -1,0 +1,665 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    font-size: 16px;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    padding: 10px;
+    color: rgb(235, 235, 135);
+    font-family: "Seymour One", sans-serif;
+    text-align: center;
+    overflow: auto;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+#home {
+    background-image: url(./assets/car.jpg);
+}
+
+#about {
+    background-image: url(./assets/carbg5.jpg);
+}
+
+#services {
+    background-image: url(./assets/service.jpg);
+}
+
+#gallery {
+    background-image: url(./assets/bg4.jpg);
+}
+
+#contact {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.title {
+    font-family: "Seymour One", sans-serif;
+    font-size: 36px;
+    color: rgb(223, 43, 226);
+}
+
+#home .subtitle {
+    opacity: 0.7;
+}
+
+#about .subtitle {
+    margin-bottom: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px black;
+    font-weight: 700;
+}
+
+#about pre {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#about .overlay {
+    height: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem;
+    margin: 20px;
+}
+
+.card img {
+    height: 180px;
+    position: relative;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#contact .title{
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.gallery img {
+    height: 250px;
+    width: 430px;
+    text-align: center;
+    margin: 10px;
+    background-color: #d2cbcb;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.map {
+    border: 1px solid black;
+    height: 240px;
+    width: 380px;
+    margin: 0px auto;
+}
+
+.map iframe{
+    height: 238px;
+    width: 376px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 3.5rem;
+    padding: 0 1rem;
+    margin-right: 2rem ;
+}
+
+#contact a {
+    color: blue;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-icons a {
+    margin-right: 1.2rem;
+    color: #000;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.address {
+    font-size: 20px;
+}
+
+@media (min-width: 1269px) {
+    .overlay {
+        height: 100%;
+    }
+
+    #about {
+        overflow: auto;
+    }
+
+    .card {
+        width: 20%;
+        margin-top: 10px;
+    }
+    
+    .card-img-top {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+    
+    .card-text {
+        font-size: 20px;
+    }
+
+    .gallery {
+       justify-content: space-between;
+    }
+
+    .gallery div {
+        width: 400px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .map {
+        height: 240px;
+        width: 380px;
+        margin: 0px auto;
+    }
+    
+    .map iframe{
+        height: 238px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1268px) {
+    .overlay {
+        height: 100%;
+    }
+
+    #about .overlay {
+        height: auto;
+    }
+
+    #about {
+        overflow: auto;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 20%;
+        margin-top: 10px;
+    }
+    
+    .card-img-top {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+    }
+
+    .gallery {
+       justify-content: space-between;
+    }
+
+    .gallery div {
+        width: 350px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .map {
+        height: 170px;
+        width: 300px;
+        margin: 0px auto;
+    }
+    
+    .map iframe{
+        height: 168px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1124px) {
+    .overlay {
+        height: 100%;
+    }
+
+    #about .overlay {
+        height: 100%;
+    }
+
+    .navbar {
+        font-size: 14px;
+    }
+    
+    .navbar-content {
+        padding-top: 8px;
+    }
+
+    .navbar-brand img{
+        height: 32px;
+    }
+
+    #about {
+        overflow: auto;
+    }
+    
+    .subtitle, .address {
+        font-size: 28px;
+    }
+    
+    #about pre {
+        font-size: 20px;
+    }
+    .card {
+        width: 32%;
+        margin: 8px;
+    }
+    
+    .card-img-top {
+        height: auto;
+        width: 100%;
+    }
+    
+    .card-body {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+    
+    .card-text {
+        font-size: 24px;
+    }
+
+    .gallery {
+       justify-content: space-between;
+    }
+    
+    .gallery div {
+        width: 440px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .map {
+        height: 240px;
+        width: 400px;
+        margin: 0px auto;
+    }
+    
+    .map iframe{
+        height: 238px;
+        width: 100%;
+    }
+
+    .footer .footer-icons {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 967px) {
+    .overlay {
+        height: 100%;
+    }
+
+    #about .overlay {
+        height: 100%;
+    }
+
+    #gallery .overlay {
+        height: auto;
+    }
+
+    .navbar-toggler {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    #about {
+        overflow: auto;
+    }
+    
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 400px;
+        width: 32%;
+        margin: 6px 10px;
+    }
+    
+    .card img {
+        height: 150px;
+        width: auto;
+    }
+    
+    .card-body {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+    
+    #gallery {
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery {
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+    
+    .gallery div {
+        width: 375px;
+        margin: 8px;
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: 200px;
+    }
+
+   .address {
+        font-size: 20px;
+    }
+    .footer .footer-icons {
+        display: none;
+    }
+
+    .footer-links a, .footer-icons a {
+        font-size: 14px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .overlay {
+        height: auto;
+    }
+
+    #about pre {
+        font-size: 16px;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .card {
+        height: 350px;
+        width: 35%;
+        margin: 6px 10px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .card img {
+        height: 120px;
+        width: auto;
+    }
+
+    #gallery {
+        overflow: auto;
+    }
+    
+    .gallery {
+        /* display: inline; */
+        justify-content: center;
+     }
+     
+     .gallery div {
+         width: 300px;
+        margin-right: 16px;
+     }
+     
+     .gallery img {
+         width: 100%;
+         height: 180px;
+     }
+
+    #contact .subtitle, .address{
+        font-size: 20px;
+    }
+
+    .map {
+        height: 125px;
+        width: 200px;
+        margin: 0px auto;
+    }
+    
+    .map iframe{
+        height: 122px;
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 480px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .footer-contact p {
+        display: none;
+    }
+}
+
+/* Additional tweaks for smaller devices */
+@media (max-width: 480px) {
+    .overlay {
+        height: auto;
+    }
+    
+    #services .overlay {
+        height: 100%;
+    }
+    
+    #about .overlay {
+        height: 100%;
+    }
+    .navbar-brand img {
+        height: 24px;
+    }
+
+    #services {
+        overflow: auto;
+    }
+
+    #about pre {
+        font-size: 16px;
+    }
+
+    .card {
+        height: 250px;
+        width: 40%;
+        margin: 6px auto;
+    }
+    
+    .card img {
+        height: 100px;
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    #gallery {
+        overflow: auto;
+    }
+    
+    .gallery {
+        /* display: inline; */
+        justify-content: center;
+     }
+     
+     .gallery div {
+         width: 300px;
+        margin-right: 16px;
+     }
+     
+     .gallery img {
+         width: 100%;
+         height: 180px;
+     }
+
+    .title {
+        font-size: 24px;
+    }
+    
+    .subtitle, .address{
+        font-size: 16px;
+    }
+
+    .map {
+        height: 120px;
+        width: 200px;
+        margin: 0px auto;
+    }
+    
+    .map iframe{
+        height: 118px;
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 480px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .footer-contact p {
+        display: none;
+    }
+}
