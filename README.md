@@ -1,4 +1,4 @@
-# parallex_website
+# parallax_website
 Sure, here is a brief description for your website:
 
 ---
