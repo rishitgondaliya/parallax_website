@@ -327,11 +327,7 @@ a {
 
 @media (max-width: 1124px) {
     .overlay {
-        height: 100%;
-    }
-
-    #about .overlay {
-        height: 100%;
+        height: auto;
     }
 
     .navbar {
@@ -357,9 +353,10 @@ a {
     #about pre {
         font-size: 20px;
     }
+
     .card {
-        width: 32%;
-        margin: 8px;
+        width: 35%;
+        margin: 8px auto;
     }
     
     .card-img-top {
@@ -372,8 +369,12 @@ a {
         overflow-y: auto;
     }
     
+    .card-title {
+        font-size: 26px;
+    }
+
     .card-text {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .gallery {
@@ -407,16 +408,16 @@ a {
 
 @media (min-width: 768px) and (max-width: 967px) {
     .overlay {
-        height: 100%;
+        height: auto;
     }
 
-    #about .overlay {
+    /* #about .overlay {
         height: 100%;
     }
 
     #gallery .overlay {
         height: auto;
-    }
+    } */
 
     .navbar-toggler {
         font-size: 14px;
@@ -440,8 +441,8 @@ a {
 
     .card {
         height: 400px;
-        width: 32%;
-        margin: 6px 10px;
+        width: 35%;
+        margin: 6px auto;
     }
     
     .card img {
@@ -452,6 +453,10 @@ a {
     .card-body {
         flex-grow: 1;
         overflow-y: auto;
+    }
+
+    .card-text {
+        font-size: 20px;
     }
     
     #gallery {
@@ -495,6 +500,18 @@ a {
         height: auto;
     }
 
+    .title {
+        font-size: 36px;
+    }
+
+    #home h3 {
+        font-size: 24px;
+    }
+
+    #home .subtitle {
+        font-size: 18px;
+    }
+
     #about pre {
         font-size: 16px;
     }
@@ -506,7 +523,7 @@ a {
     .card {
         height: 350px;
         width: 35%;
-        margin: 6px 10px;
+        margin: 6px auto;
     }
     
     .card-title {
@@ -557,7 +574,7 @@ a {
     }
 
     .footer-links {
-        width: 480px;
+        width: 100%;
     }
 
     .footer-links a {
@@ -576,13 +593,18 @@ a {
         height: auto;
     }
     
+    #home h3 {
+        font-size: 20px;
+    }
+
+    #home .subtitle {
+        font-size: 16px;
+    }
+
     #services .overlay {
         height: 100%;
     }
-    
-    #about .overlay {
-        height: 100%;
-    }
+
     .navbar-brand img {
         height: 24px;
     }
@@ -611,7 +633,7 @@ a {
     }
 
     .card-text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #gallery {
