@@ -1,5 +1,4 @@
 # parallax_website
----
 
 Welcome to "Deluxe Cars", a vibrant and dynamic platform designed to captivate and engage. Our website features a seamless navigation experience, enhanced by smooth scrolling and eye-catching animations that bring every section to life. 
 
