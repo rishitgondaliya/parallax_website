@@ -1,6 +1,4 @@
 # parallax_website
-Sure, here is a brief description for your website:
-
 ---
 
 Welcome to "Deluxe Cars", a vibrant and dynamic platform designed to captivate and engage. Our website features a seamless navigation experience, enhanced by smooth scrolling and eye-catching animations that bring every section to life. 
@@ -13,7 +11,3 @@ Welcome to "Deluxe Cars", a vibrant and dynamic platform designed to captivate a
 - Modern Design: Our design incorporates a harmonious color palette, providing a cohesive and appealing aesthetic.
   
 - User-Friendly Interface: A clean, intuitive layout ensures easy access to information and features, making navigation a breeze for users of all ages.
-
-Explore our site to discover a blend of innovation and elegance, designed to provide an immersive user experience. 
-
----
